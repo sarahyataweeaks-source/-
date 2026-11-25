@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สินค้าทั้งหมด</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">บะหมี่กึ่งสำเร็จรูป</a>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html" aria-current="page">สินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <h1>สินค้าทั้งหมด</h1>
+          <p>เลือกรสที่ชอบ แล้วกดสั่งซื้อได้ทันที</p>
+        </div>
+
+        <div id="filter-bar" class="filters" role="group" aria-label="กรองสินค้าตาม mood">
+          <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">ทั้งหมด</button>
+          <button type="button" class="filter-btn" data-filter="fresh" data-mood="fresh" aria-pressed="false">Fresh</button>
+          <button type="button" class="filter-btn" data-filter="sweet" data-mood="sweet" aria-pressed="false">Sweet</button>
+          <button type="button" class="filter-btn" data-filter="confident" data-mood="confident" aria-pressed="false">Confident</button>
+          <button type="button" class="filter-btn" data-filter="romance" data-mood="romance" aria-pressed="false">Romance</button>
+        </div>
+
+        <div id="product-list" class="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>&copy; 2026 บะหมี่กึ่งสำเร็จรูป</span>
+      <a href="index.html">กลับหน้าแรก</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
